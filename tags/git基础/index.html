@@ -6,42 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git原理与团队协作 | 程序员的傲娇</title>
+  <title>Tag: git基础 | 程序员的傲娇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content=".">
-<meta property="og:type" content="article">
-<meta property="og:title" content="git原理与团队协作">
-<meta property="og:url" content="http://yoursite.com/2020/02/29/git%E5%8E%9F%E7%90%86%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/index.html">
+  <meta name="description" content="#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="程序员的傲娇">
+<meta property="og:url" content="http://yoursite.com/tags/git%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="程序员的傲娇">
-<meta property="og:description" content=".">
+<meta property="og:description" content="#">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211508491.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211525490.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211537646.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020022921155333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211607628.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211621216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020022921163379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211646901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211656802.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211708617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211725705.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211743362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211754941.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211815815.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211835114.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211851892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211903922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211916641.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211927365.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229211950494.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229212002454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200229212031253.png">
-<meta property="article:published_time" content="2020-02-29T13:47:26.887Z">
-<meta property="article:modified_time" content="2020-02-29T13:47:26.888Z">
 <meta property="article:author" content="爱他，保佑他">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200229211508491.png">
   
     <link rel="alternative" href="/atom.xml" title="程序员的傲娇" type="application/atom+xml">
   
@@ -83,6 +58,10 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/archives/index.html">归档</a></li>
+	        
+				<li><a href="/categories">分类</a></li>
+	        
+				<li><a href="/tags">标签</a></li>
 	        
 			</ul>
 		</nav>
@@ -134,6 +113,10 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -149,12 +132,16 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
+		        
+					<li style="width: 25%"><a href="/categories">分类</a></li>
+		        
+					<li style="width: 25%"><a href="/tags">标签</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,194 +156,71 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git原理与团队协作" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      git原理与团队协作
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/03/01/git%E5%9F%BA%E7%A1%80%20/" class="archive-article-date">
+  	<time datetime="2020-03-01T08:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/03/01/git%E5%9F%BA%E7%A1%80%20/">git基础</a>
     </h1>
   
 
-        
-        <a href="/2020/02/29/git%E5%8E%9F%E7%90%86%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/" class="archive-article-date">
-  	<time datetime="2020-02-29T13:47:26.887Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>.<a id="more"></a></p>
-<h1 id="Git基本原理"><a href="#Git基本原理" class="headerlink" title="Git基本原理"></a>Git基本原理</h1><h2 id="5-1哈希"><a href="#5-1哈希" class="headerlink" title="5.1哈希"></a>5.1哈希</h2><p>哈希是一个系列的加密算法，各个不同的哈希算法虽然加密强度不同，但是有以下几个共同点:<br>①    不管输入数据的数据量有多大，输入同一个哈希算法，得到的加密结果长度固定。<br>②    哈希算法确定，输入数据确定，输出数据能够保证不变<br>③    哈希算法确定，输入数据有变化，输出数据定有变化，而且通常变化很大<br>④哈希算法不可逆<br>Git底层采用的是SHA-1算法。<br>哈希算法可以被用来验证文件。原理如下图所示:<br> <img src="https://img-blog.csdnimg.cn/20200229211508491.png" alt="在这里插入图片描述"><br>Git就是靠这种机制来从根本上保证数据完整性的。</p>
-<h2 id="5-2-Git保存版本的机制"><a href="#5-2-Git保存版本的机制" class="headerlink" title="5.2 Git保存版本的机制"></a>5.2 Git保存版本的机制</h2><h3 id="5-2-1、集中式版本控制工具的文件管理机制"><a href="#5-2-1、集中式版本控制工具的文件管理机制" class="headerlink" title="5.2.1、集中式版本控制工具的文件管理机制"></a>5.2.1、集中式版本控制工具的文件管理机制</h3><p>以文件变更列表的方式存储信息。这类系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异。<br> <img src="https://img-blog.csdnimg.cn/20200229211525490.png" alt="在这里插入图片描述"><br>每次只保存变化的部分，需要时将每次的更改与原始文件拼接起来作为最终的文件（增量式版本控制）</p>
-<h3 id="5-2-2、Git-的文件管理机制"><a href="#5-2-2、Git-的文件管理机制" class="headerlink" title="5.2.2、Git 的文件管理机制"></a>5.2.2、Git 的文件管理机制</h3><p>Git把数据看作是小型文件系统的一组快照。 每次提交更新时Git都会对当前的全部文件制作一个快照并保存这个快照的索引。为了高效， 如果文件没有修改，Git不再重新存储该文件，而是只保留一个链接指向之前存储的文件。所以Git的工作方式可以称之为快照流。<br>I <img src="https://img-blog.csdnimg.cn/20200229211537646.png" alt="在这里插入图片描述"></p>
-<h3 id="5-2-3-Git-文件管理机制细节"><a href="#5-2-3-Git-文件管理机制细节" class="headerlink" title="5.2.3 Git 文件管理机制细节"></a>5.2.3 Git 文件管理机制细节</h3><p>➢ Git的“提交对象”<br> <img src="https://img-blog.csdnimg.cn/2020022921155333.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>➢提交对象及其父对象形成的链条<br> <img src="https://img-blog.csdnimg.cn/20200229211607628.png" alt="在这里插入图片描述"></p>
-<h2 id="5-3-Git分支管理机制"><a href="#5-3-Git分支管理机制" class="headerlink" title="5.3 Git分支管理机制"></a>5.3 Git分支管理机制</h2><h3 id="5-3-1分支的创建"><a href="#5-3-1分支的创建" class="headerlink" title="5.3.1分支的创建"></a>5.3.1分支的创建</h3><p> <img src="https://img-blog.csdnimg.cn/20200229211621216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="5-3-2分支的切换"><a href="#5-3-2分支的切换" class="headerlink" title="5.3.2分支的切换"></a>5.3.2分支的切换</h3><p> <img src="https://img-blog.csdnimg.cn/2020022921163379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20200229211646901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20200229211656802.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20200229211708617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="6-GitHub的应用及团队协作"><a href="#6-GitHub的应用及团队协作" class="headerlink" title="6 GitHub的应用及团队协作"></a>6 GitHub的应用及团队协作</h1><h2 id="6-1账号信息"><a href="#6-1账号信息" class="headerlink" title="6.1账号信息"></a>6.1账号信息</h2><pre><code>创建GitHub账号</code></pre><h2 id="6-2-A用户新建远程库"><a href="#6-2-A用户新建远程库" class="headerlink" title="6.2  A用户新建远程库"></a>6.2  A用户新建远程库</h2><p><img src="https://img-blog.csdnimg.cn/20200229211725705.png" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20200229211743362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20200229211754941.png" alt="在这里插入图片描述"></p>
-<h2 id="6-3-A用户将本地库推送到远程库"><a href="#6-3-A用户将本地库推送到远程库" class="headerlink" title="6.3  A用户将本地库推送到远程库"></a>6.3  A用户将本地库推送到远程库</h2><h3 id="6-3-1-给远程库地址起别名-将地址保存到本地库"><a href="#6-3-1-给远程库地址起别名-将地址保存到本地库" class="headerlink" title="6.3.1 给远程库地址起别名(将地址保存到本地库)"></a>6.3.1 给远程库地址起别名(将地址保存到本地库)</h3><p>查看地址别名信息：</p>
-<pre><code>git remote -v</code></pre><p>给地址起别名：</p>
-<pre><code>git remote add [地址别名] [地址]</code></pre><p>注：别名只在该远程库中有效</p>
-<h3 id="6-3-2-将本地库推送到远程库"><a href="#6-3-2-将本地库推送到远程库" class="headerlink" title="6.3.2 将本地库推送到远程库"></a>6.3.2 将本地库推送到远程库</h3><pre><code>git push [地址别名] [分支]
-例：git push origin master</code></pre><p>解释：将本地库的master分支推送到地址别名为origin的远程库<br><img src="https://img-blog.csdnimg.cn/20200229211815815.png" alt="在这里插入图片描述">         </p>
-<h2 id="6-4-B用户将A用户的远程库克隆到本地"><a href="#6-4-B用户将A用户的远程库克隆到本地" class="headerlink" title="6.4  B用户将A用户的远程库克隆到本地"></a>6.4  B用户将A用户的远程库克隆到本地</h2><p>➢命令</p>
-<pre><code>git clone [远程库地址]</code></pre><p>➢ 克隆的效果<br>完整的把远程库下载到本地<br>创建origin远程地址别名<br>初始化本地库<br>注：此刻B用户如果想把从A用户那克隆下来的仓库内容修改后推送到远程库，必须是A用户邀请他加入团队才可以</p>
-<h2 id="6-5-A用户把B用户邀请进团队"><a href="#6-5-A用户把B用户邀请进团队" class="headerlink" title="6.5  A用户把B用户邀请进团队"></a>6.5  A用户把B用户邀请进团队</h2><p>GitHub·登录A用户进行一下操作：<br><img src="https://img-blog.csdnimg.cn/20200229211835114.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200229211851892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200229211903922.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>    Github登录B用户进行一下操作：<br><img src="https://img-blog.csdnimg.cn/20200229211916641.png" alt="在这里插入图片描述">         </p>
-<h2 id="6-6-B用户在刚克隆的本地库中修改内容，并推送到远程库"><a href="#6-6-B用户在刚克隆的本地库中修改内容，并推送到远程库" class="headerlink" title="6.6  B用户在刚克隆的本地库中修改内容，并推送到远程库"></a>6.6  B用户在刚克隆的本地库中修改内容，并推送到远程库</h2><p>代码：</p>
-<pre><code>git push origin master</code></pre><p><img src="https://img-blog.csdnimg.cn/20200229211927365.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>注：推送时登陆的是B用户的GitHub账号<br>可以在 <img src="https://img-blog.csdnimg.cn/20200229211950494.png" alt="在这里插入图片描述">中完成删除登录信息记录<br><img src="https://img-blog.csdnimg.cn/20200229212002454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="6-7-A用户将B用户上传的的信息拉去下拉"><a href="#6-7-A用户将B用户上传的的信息拉去下拉" class="headerlink" title="6.7  A用户将B用户上传的的信息拉去下拉"></a>6.7  A用户将B用户上传的的信息拉去下拉</h2><p>Pull（拉去）操作分开执行</p>
-<p>Pull=fetch+merge<br>分开执行的好处：便于对拉去信息检查，检查过后再进行合并<br>    代码：</p>
-<pre><code>①   git fetch origin master
-②    git checkout origin/master
-③    git checkout master
-④    git merge origin/master</code></pre><p>代码说明：<br>①    将地址别名为origin的远程库的master分支拉去到本地（只读操作，不需要登录）<br>②    切换到以拉去到本地的地址别名为origin的master分支（切换到该分支后可对B用户修改内容进行检查）<br>③    切回本地master分支（以便于下一步的合并分支）<br>④    将拉去到本地的地址别名为origin的master分支合并到本地的master分支<br> <img src="https://img-blog.csdnimg.cn/20200229212031253.png" alt="在这里插入图片描述"><br>Pull的使用<br>代码：</p>
-<pre><code>git pull origin master</code></pre><p>代码说明：<br>将地址别名为origin的远程库的master分支拉去到本地（只读操作。不需要登录）</p>
-<h2 id="6-8-团队协作应注意的问题"><a href="#6-8-团队协作应注意的问题" class="headerlink" title="6.8 团队协作应注意的问题"></a>6.8 团队协作应注意的问题</h2><p>把数据上传到远程库时应注意：<br>要先进行pull（拉去）操作，对本地库进行更新，再进行push（推送）操作，避免发生冲突。<br>发生冲突时：<br>如果同一团队的成员对同一文件的同一个位置进行修改，第一个修改人可以推送，第二修改人必须先把信息拉去下来再推送，否者将推送失败<br>例：<br>①    A用户对a.txt文件的第一行修改、添加到本地库、推送到远程库·（成功）<br>②    B用户对a.txt文件的第一行修改、添加到本地库（成功），推送到远程库（失败）<br>③    B用户需要先拉去，再推送，具体操作如下：<br>B用户（pull）拉去远程库信息（成功并产生冲突）、在冲突环境下解决冲突（具体步骤上述有）、（push）推送</p>
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git基础</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/git//" class="article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/29/git%E5%8E%9F%E7%90%86%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2020/02/29/git%E5%9F%BA%E7%A1%80%20/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git基础 </div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git基本原理"><span class="toc-number">1.</span> <span class="toc-text">Git基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1哈希"><span class="toc-number">1.1.</span> <span class="toc-text">5.1哈希</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-Git保存版本的机制"><span class="toc-number">1.2.</span> <span class="toc-text">5.2 Git保存版本的机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-1、集中式版本控制工具的文件管理机制"><span class="toc-number">1.2.1.</span> <span class="toc-text">5.2.1、集中式版本控制工具的文件管理机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-2、Git-的文件管理机制"><span class="toc-number">1.2.2.</span> <span class="toc-text">5.2.2、Git 的文件管理机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-3-Git-文件管理机制细节"><span class="toc-number">1.2.3.</span> <span class="toc-text">5.2.3 Git 文件管理机制细节</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-3-Git分支管理机制"><span class="toc-number">1.3.</span> <span class="toc-text">5.3 Git分支管理机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-1分支的创建"><span class="toc-number">1.3.1.</span> <span class="toc-text">5.3.1分支的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-2分支的切换"><span class="toc-number">1.3.2.</span> <span class="toc-text">5.3.2分支的切换</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-GitHub的应用及团队协作"><span class="toc-number">2.</span> <span class="toc-text">6 GitHub的应用及团队协作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-1账号信息"><span class="toc-number">2.1.</span> <span class="toc-text">6.1账号信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-2-A用户新建远程库"><span class="toc-number">2.2.</span> <span class="toc-text">6.2  A用户新建远程库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3-A用户将本地库推送到远程库"><span class="toc-number">2.3.</span> <span class="toc-text">6.3  A用户将本地库推送到远程库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-1-给远程库地址起别名-将地址保存到本地库"><span class="toc-number">2.3.1.</span> <span class="toc-text">6.3.1 给远程库地址起别名(将地址保存到本地库)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-2-将本地库推送到远程库"><span class="toc-number">2.3.2.</span> <span class="toc-text">6.3.2 将本地库推送到远程库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-4-B用户将A用户的远程库克隆到本地"><span class="toc-number">2.4.</span> <span class="toc-text">6.4  B用户将A用户的远程库克隆到本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-5-A用户把B用户邀请进团队"><span class="toc-number">2.5.</span> <span class="toc-text">6.5  A用户把B用户邀请进团队</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-6-B用户在刚克隆的本地库中修改内容，并推送到远程库"><span class="toc-number">2.6.</span> <span class="toc-text">6.6  B用户在刚克隆的本地库中修改内容，并推送到远程库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-7-A用户将B用户上传的的信息拉去下拉"><span class="toc-number">2.7.</span> <span class="toc-text">6.7  A用户将B用户上传的的信息拉去下拉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-8-团队协作应注意的问题"><span class="toc-number">2.8.</span> <span class="toc-text">6.8 团队协作应注意的问题</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -383,9 +247,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -445,6 +309,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git操作</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git原理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">git团队协作</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
