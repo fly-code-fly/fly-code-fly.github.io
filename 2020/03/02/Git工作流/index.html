@@ -6,17 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com/child">
-  <title>Tag: git团队协作 | 程序员的傲娇</title>
+  <title>git工作流 | 程序员的傲娇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#">
-<meta property="og:type" content="website">
-<meta property="og:title" content="程序员的傲娇">
-<meta property="og:url" content="http://yoursite.com/child/tags/git%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/index.html">
+  <meta name="description" content="git工作流的概述以及简述如何搭建gitlab服务器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git工作流">
+<meta property="og:url" content="http://yoursite.com/child/2020/03/02/Git%E5%B7%A5%E4%BD%9C%E6%B5%81/index.html">
 <meta property="og:site_name" content="程序员的傲娇">
-<meta property="og:description" content="#">
+<meta property="og:description" content="git工作流的概述以及简述如何搭建gitlab服务器">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115244386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020030711530472.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115342653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115405549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020030711542188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115437115.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115455338.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115506944.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115517580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200307115553711.png">
+<meta property="article:published_time" content="2020-03-02T05:19:33.000Z">
+<meta property="article:modified_time" content="2020-03-07T04:13:31.426Z">
 <meta property="article:author" content="爱他，保佑他">
+<meta property="article:tag" content="git概念">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200307115244386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="程序员的傲娇" type="application/atom+xml">
   
@@ -156,52 +170,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Git工作流" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/git%E5%8E%9F%E7%90%86%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/" class="archive-article-date">
-  	<time datetime="2020-03-01T08:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/git%E5%8E%9F%E7%90%86%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/">git原理与团队协作</a>
+    <h1 class="article-title" itemprop="name">
+      git工作流
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/03/02/Git%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="archive-article-date">
+  	<time datetime="2020-03-02T05:19:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+	
+		<p>git工作流的概述以及简述如何搭建gitlab服务器<a id="more"></a></p>
+<h2 id="10-1概念"><a href="#10-1概念" class="headerlink" title="10.1概念"></a>10.1概念</h2><p>在项目开发过程中使用Git的方式</p>
+<h2 id="10-2分类"><a href="#10-2分类" class="headerlink" title="10.2分类"></a>10.2分类</h2><h3 id="10-2-1集中式工作流"><a href="#10-2-1集中式工作流" class="headerlink" title="10.2.1集中式工作流"></a>10.2.1集中式工作流</h3><p>像SVN一样，集中式工作流以中央仓库作为项目所有修改的单点实体。所有修改都提交到Master这个分支上。<br>这种方式与SVN的主要区别就是开发人员有本地库。Git很多特性并没有用到。<br> <img src="https://img-blog.csdnimg.cn/20200307115244386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="10-2-2-GitFlow-工作流"><a href="#10-2-2-GitFlow-工作流" class="headerlink" title="10.2.2 GitFlow 工作流"></a>10.2.2 GitFlow 工作流</h3><p>Gitflow工作流通过为功能开发、发布准备和维护设立了独立的分支，让发布迭代过程更流畅。严格的分支模型也为大型项目提供了一些非常必要的结构。<br><img src="https://img-blog.csdnimg.cn/2020030711530472.png" alt="在这里插入图片描述"></p>
+<h3 id="10-2-3-Forking-工作流"><a href="#10-2-3-Forking-工作流" class="headerlink" title="10.2.3 Forking 工作流"></a>10.2.3 Forking 工作流</h3><p>Forking工作流是在GitFlow基础上，充分利用了Git的Fork和pull request的功能以达到代码审核的目的。更适合安全可靠地管理大团队的开发者，而且能接受不信任贡献者的提交。<br><img src="https://img-blog.csdnimg.cn/20200307115342653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="10-3-GitFlow工作流详解"><a href="#10-3-GitFlow工作流详解" class="headerlink" title="10.3  GitFlow工作流详解"></a>10.3  GitFlow工作流详解</h2><h3 id="10-3-1分支种类"><a href="#10-3-1分支种类" class="headerlink" title="10.3.1分支种类"></a>10.3.1分支种类</h3><p>➢ 主干分支master<br>主要负责管理正在运行的生产环境代码。永远保持与正在运行的生产环境完全致。<br>➢ 开发分支develop<br>主要负责管理正在开发过程中的代码。一般情况 下应该是最新的代码。<br>➢ bug修理分支hotfix<br>主要负责管理生产环境下出现的紧急修复的代码。从主干分 支分出，修理完毕并测试上线后，并回主干分支。并回后，视情况可以删除该分支。<br>➢ 准生产分支(预发布分支)release<br>较大的版本上线前，会从开发分支中分出准生产分支，进行最后阶段的集成测试。该版本上线后，会合并到主干分支。生产环境运行一段阶段较稳定后可以视情况删除。<br>➢功能分支feature<br>为了不影响较短周期的开发工作，一般把中长期开发模块，会从开发分支中独立出来。开发完成后会合并到开发分支。<br>    10.3.2 GitFlow 工作流举例<br> <img src="https://img-blog.csdnimg.cn/20200307115405549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="10-4-girflow实战"><a href="#10-4-girflow实战" class="headerlink" title="10.4 girflow实战"></a>10.4 girflow实战</h2><p><img src="https://img-blog.csdnimg.cn/2020030711542188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>需要用到的有：<br><img src="https://img-blog.csdnimg.cn/20200307115437115.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>推送hotfix分支<br>    文件右键<br><img src="https://img-blog.csdnimg.cn/20200307115455338.png" alt="在这里插入图片描述"><br>拉取操作<br><img src="https://img-blog.csdnimg.cn/20200307115506944.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>切换分支操作：（team、switch to、other）</p>
+<p><img src="https://img-blog.csdnimg.cn/20200307115517580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTc4NDg3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200307115553711.png" alt="在这里插入图片描述"></p>
+<h1 id="11-Gitlab服务器搭建过程"><a href="#11-Gitlab服务器搭建过程" class="headerlink" title="11 Gitlab服务器搭建过程"></a>11 Gitlab服务器搭建过程</h1><h2 id="官网地址"><a href="#官网地址" class="headerlink" title="官网地址"></a>官网地址</h2><p>首页: <a href="https://about.gitlab.com/" target="_blank" rel="noopener">https://about.gitlab.com/</a><br>安装说明: <a href="https://about.gitlab.com/installation/" target="_blank" rel="noopener">https://about.gitlab.com/installation/</a></p>
+<h2 id="安装命令摘录"><a href="#安装命令摘录" class="headerlink" title="安装命令摘录"></a>安装命令摘录</h2><pre><code>sudo yum install -y curl policycoreutils-python openssh-server cronie
+sudo lokkit -S http -S ssh
+sudo yum install postfix
+sudo service postfix start
+sudo chkconfig postfix on
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh| sudo bash
+sudo EXTERNAL URL=&quot;http://gitlab.example.com&quot; yum -Y install gitlab-ee</code></pre><p>实际问题: yum安装eitlab-ee(或cel时，需要联网下载几百M的安装文件，非常耗时，所以应提前把所需RPM包下载并安装好。<br>下载地址为:<br><a href="https://packages" target="_blank" rel="noopener">https://packages</a>. gitlab.com/gitlab/gitlab ce/packages/el/7/gitlab-ce-10.8.2-ce.0.eI7.x86_ _64.rpm</p>
+<h2 id="调整后的安装过程"><a href="#调整后的安装过程" class="headerlink" title="调整后的安装过程"></a>调整后的安装过程</h2><pre><code>sudo rpm -ivh /opt/gitlab-ce 10.8.2-ce.0.el7.x86_ _64.rpm
+sudo yum install -y curl policycoreutils-python openssh-server cronie
+sudo lokkit -S http -S ssh
+sudo yum install postfix
+sudo service postfix start
+sudo chkconfig postfix on
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+sudo EXTERNAL _URL=&quot;http://gitlab. example.com&quot; yum -y install gitlab-ce</code></pre><p>当前步骤完成后重启。<br>注：安装之前先设置快照，防止出错</p>
+<h2 id="gitlab服务操作"><a href="#gitlab服务操作" class="headerlink" title="gitlab服务操作"></a>gitlab服务操作</h2><p>➢ 初始化配置gitlab</p>
+<pre><code>gitlab-ctl reconfigure</code></pre><p>➢ 启动gitlab服务</p>
+<pre><code>gitlab-ctl start</code></pre><p>➢ 停止gitlab服务（附加）</p>
+<pre><code>gitlab-ctl stop</code></pre><h2 id="浏览器访问"><a href="#浏览器访问" class="headerlink" title="浏览器访问"></a>浏览器访问</h2><p>访问Linux服务器IP地址即可，如果想访问EXTERNAL URL指定的域名还需要配置域名服务器或本地hosts文件。<br>初次登录时需要为gitlab的root用户设置密码。</p>
+<p>※应该会需要停止防火墙服务:</p>
+<pre><code>service firewalld stop</code></pre><p>注：在gitlab搭建之前要将centos的网络设为静态的</p>
+
+	
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git原理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">git团队协作</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git概念</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -214,17 +253,117 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/child/2020/03/02/Git%E5%B7%A5%E4%BD%9C%E6%B5%81/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/03/02/SSH%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ssh免密登录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#10-1概念"><span class="toc-number">1.</span> <span class="toc-text">10.1概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-2分类"><span class="toc-number">2.</span> <span class="toc-text">10.2分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-1集中式工作流"><span class="toc-number">2.1.</span> <span class="toc-text">10.2.1集中式工作流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-2-GitFlow-工作流"><span class="toc-number">2.2.</span> <span class="toc-text">10.2.2 GitFlow 工作流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-3-Forking-工作流"><span class="toc-number">2.3.</span> <span class="toc-text">10.2.3 Forking 工作流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-3-GitFlow工作流详解"><span class="toc-number">3.</span> <span class="toc-text">10.3  GitFlow工作流详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-3-1分支种类"><span class="toc-number">3.1.</span> <span class="toc-text">10.3.1分支种类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-4-girflow实战"><span class="toc-number">4.</span> <span class="toc-text">10.4 girflow实战</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-Gitlab服务器搭建过程"><span class="toc-number"></span> <span class="toc-text">11 Gitlab服务器搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官网地址"><span class="toc-number">1.</span> <span class="toc-text">官网地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装命令摘录"><span class="toc-number">2.</span> <span class="toc-text">安装命令摘录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调整后的安装过程"><span class="toc-number">3.</span> <span class="toc-text">调整后的安装过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitlab服务操作"><span class="toc-number">4.</span> <span class="toc-text">gitlab服务操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浏览器访问"><span class="toc-number">5.</span> <span class="toc-text">浏览器访问</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -251,9 +390,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
